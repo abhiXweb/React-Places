@@ -6,8 +6,22 @@
     font-family: 'Poppins';
 }
 
+i {
+    color: #F55A5A;
+}
+
+span.location {
+    margin-left: 10px;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+a {
+    color: #918E9B;
+}
+
 nav {
-    background-color: #f55a5a;
+    background-color: #F55A5A;
     padding: 20px 0;
     display: flex;
     justify-content: center;
@@ -18,11 +32,90 @@ nav {
     color: #fff;
 }
 
-section{
+section {
     display: flex;
     justify-content: center;
 }
 
-div.container{
-    width: 1200px;
+div.container {
+    width: 1100px;
+}
+
+div.row {
+    padding: 30px 0;
+}
+
+.place__img img {
+    width: 320px;
+    height: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+div.place {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 2px solid #918e9b21;
+}
+
+div.place__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.place__map,
+div.place__date {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+div.place__head h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+div.place__date {
+    font-weight: bold;
+}
+
+div.place__desc p {
+    font-weight: 18px;
+}
+
+div.place:last-child {
+    border: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    color: #fff;
+    background-color: #F55A5A;
+}
+
+footer .footer__logo {
+    width: 20px;
+    object-fit: contain;
+    margin: 0 5px;
+}
+
+@media only screen and (max-width: 480px) {
+    div.place {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    div.place__content {
+        padding: 0 40px;
+    }
+}
+
+@media only screen and (max-width: 720) {
+    div.place {
+        flex-wrap: wrap;
+    }
 }

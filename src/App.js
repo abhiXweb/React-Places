@@ -1,11 +1,13 @@
 import Header from "./components/Header";
-import Places from "./components/Places";
+import Content from "./components/Content";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Header />
-        <Places />
+        <Content />
+        <Footer />
       </header>
     </div>
   );
